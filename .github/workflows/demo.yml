@@ -4,8 +4,8 @@ jobs:
   frontend-build:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "This is frontend build"
       - name: My first job
-        run: echo "This is frontend build"
         uses: actions/checkout@v3
       - name: List files in the repository
         run: |
@@ -32,8 +32,8 @@ jobs:
   backend-build:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "This is backend build"
       - name: My first job
-        run: echo "This is backend build"
         uses: actions/checkout@v3
       - name: List files in the repository
         run: |
